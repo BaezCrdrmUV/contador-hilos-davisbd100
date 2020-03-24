@@ -13,7 +13,7 @@
         <Label x:Name="lbManual" Content="Contador Manual" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="490,122,0,0" FontSize="22"/>
         <TextBlock x:Name="tblManual" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="554,227,0,0" FontSize="36" Text="0"/>
         <Button x:Name="btAdd" Content="Añadir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="527,320,0,0" FontSize="20" Click="btAdd_Click"/>
-        <Button x:Name="btStart" Content="Iniciar contador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,320,0,0" FontSize="20"/>
+        <Button x:Name="btStart" Content="Iniciar contador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Margin="106,320,0,0" FontSize="20" Click="btStart_Click"/>
 
     </Grid>
 </Window>

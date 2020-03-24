@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,6 +35,26 @@ namespace contador_hilos_davisbd100
 
         private void btStart_Click(object sender, RoutedEventArgs e)
         {
+            if (cbThread.IsChecked.HasValue && cbThread.IsChecked.Value)
+            {
+                Thread thread = new Thread(CounterAutomatic);
+                thread.Start();
+            }
+            else
+            {
+                CounterAutomatic();
+            }
+        }
+        void CounterAutomatic()
+        {
+            for (int i = 0; i < 101; i++)
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    tblAutomatic.Text = i.ToString();
+                });
+                Thread.Sleep(50);
+            }
         }
     }
 }
