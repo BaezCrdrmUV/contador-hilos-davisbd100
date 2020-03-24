@@ -1,0 +1,19 @@
+﻿<Window x:Class="contador_hilos_davisbd100.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:contador_hilos_davisbd100"
+        mc:Ignorable="d"
+        Title="Contador" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="cbThread" Content="Hilos mode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="336,10,0,0" FontSize="20"/>
+        <Label x:Name="lbAutomatic" Content="Contador Automatico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="57,122,0,0" FontSize="22"/>
+        <TextBlock x:Name="tblAutomatic" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="122,227,0,0" FontSize="36" Text="0"/>
+        <Label x:Name="lbManual" Content="Contador Manual" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="490,122,0,0" FontSize="22"/>
+        <TextBlock x:Name="tblManual" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="554,227,0,0" FontSize="36" Text="0"/>
+        <Button x:Name="btAdd" Content="Añadir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="527,320,0,0" FontSize="20" Click="btAdd_Click"/>
+        <Button x:Name="btStart" Content="Iniciar contador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,320,0,0" FontSize="20"/>
+
+    </Grid>
+</Window>
